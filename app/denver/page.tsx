@@ -4,14 +4,14 @@ import CityHero from "@/components/CityHero";
 export const metadata: Metadata = {
   title: "Denver | Wine Spectator Grand Tour 2026",
   description:
-    "Wine Spectator's Grand Tour Denver — Saturday, April 18 at Sheraton Denver Downtown. Taste 200+ wines rated 90+ points.",
+    "Wine Spectator's Grand Tour Denver — April 10–12, 2026 at Sheraton Denver Downtown. Taste 200+ wines rated 90+ points.",
 };
 
 export default function DenverPage() {
   return (
     <CityHero
       city="Denver"
-      date="Saturday, April 18, 2026"
+      date="April 10–12, 2026"
       venue="Sheraton Denver Downtown"
       venueAddress="1550 Court Pl, Denver, CO 80202"
       venuePhone="(303) 893-3333"
@@ -66,6 +66,7 @@ export default function DenverPage() {
           logo: "https://static.wixstatic.com/media/20fc31_83c3ad91b0ac42018bdb0bdd2f3ca697~mv2.png/v1/fill/w_980,h_782,al_c,q_90,usm_0.66_1.00_0.01,enc_avif,quality_auto/Nocturne_logo_reverse_color_FA%20(1)_edited.png",
           href: "https://www.winespectator.com/restaurants/6623/nocturne",
           tier: "Award of Excellence",
+          logoSurface: "dark",
         },
       ]}
       galleryImages={[

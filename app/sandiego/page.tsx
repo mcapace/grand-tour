@@ -4,14 +4,14 @@ import CityHero from "@/components/CityHero";
 export const metadata: Metadata = {
   title: "San Diego | Wine Spectator Grand Tour 2026",
   description:
-    "Wine Spectator's Grand Tour San Diego — Saturday, April 25 at Gaylord Convention Center. Taste 200+ wines rated 90+ points.",
+    "Wine Spectator's Grand Tour San Diego — March 13–15, 2026 at Gaylord Convention Center. Taste 200+ wines rated 90+ points.",
 };
 
 export default function SanDiegoPage() {
   return (
     <CityHero
       city="San Diego"
-      date="Saturday, April 25, 2026"
+      date="March 13–15, 2026"
       venue="Gaylord Convention Center"
       heroImage="https://static.wixstatic.com/media/87b21c_265dae08eaee43d4aec1e436c47328e1~mv2.jpg/v1/fit/w_805,h_700,q_90,enc_avif,quality_auto/87b21c_265dae08eaee43d4aec1e436c47328e1~mv2.jpg"
       tixrUrl="https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-san-diego-164352"

@@ -5,6 +5,10 @@ import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 
+/** Same horizontal lockup as home hero — reads clearly on a solid cream chip */
+const NAV_LOGO_URL =
+  "https://static.wixstatic.com/media/87b21c_fd04523daf3640989761afa9d8a7bdf5~mv2.avif/v1/fill/w_980,h_165,al_c,q_80,enc_avif,quality_auto/WSGrandTourLogoLockup2024.avif";
+
 const links = [
   { href: "/", label: "Home" },
   { href: "/denver", label: "Denver" },
@@ -23,14 +27,18 @@ export default function Nav() {
     <header className="sticky top-0 z-50 bg-charcoal/95 backdrop-blur-sm border-b border-gold/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="flex-shrink-0">
+        <Link
+          href="/"
+          className="relative z-10 flex-shrink-0 isolate rounded border-2 border-gold/50 bg-cream px-2.5 py-1 shadow-[0_2px_12px_rgba(0,0,0,0.45)]"
+        >
           <Image
-            src="https://static.wixstatic.com/media/20fc31_2417638287b74efd913e329406c048d5~mv2.png/v1/crop/x_0,y_207,w_500,h_260/fill/w_500,h_260,al_c,q_85,enc_avif,quality_auto/WSGrandTourLogo2-Line2024-500x700.png"
+            src={NAV_LOGO_URL}
             alt="Wine Spectator Grand Tour"
-            width={120}
-            height={62}
-            className="h-10 w-auto"
+            width={280}
+            height={47}
+            className="h-8 w-auto max-w-[min(58vw,260px)] object-contain object-left mix-blend-normal"
             unoptimized
+            priority
           />
         </Link>
 

@@ -4,14 +4,14 @@ import CityHero from "@/components/CityHero";
 export const metadata: Metadata = {
   title: "Tampa | Wine Spectator Grand Tour 2026",
   description:
-    "Wine Spectator's Grand Tour Tampa — Friday, May 1 at JW Marriott Tampa Water Street. Taste 200+ wines rated 90+ points.",
+    "Wine Spectator's Grand Tour Tampa — April 17–19, 2026 at JW Marriott Tampa Water Street. Taste 200+ wines rated 90+ points.",
 };
 
 export default function TampaPage() {
   return (
     <CityHero
       city="Tampa"
-      date="Friday, May 1, 2026"
+      date="April 17–19, 2026"
       venue="JW Marriott Tampa Water Street"
       heroImage="https://static.wixstatic.com/media/87b21c_8f83d316b4dc4a07aa84bc10befcb7e3~mv2.jpg/v1/fit/w_963,h_700,q_90,enc_avif,quality_auto/87b21c_8f83d316b4dc4a07aa84bc10befcb7e3~mv2.jpg"
       tixrUrl="https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-tampa-164457"

@@ -20,7 +20,14 @@ interface CityHeroProps {
   hotelBookUrl?: string;
   floorPlanUrl?: string;
   tickets: TicketTier[];
-  restaurantAwards?: { name: string; logo: string; href: string; tier: string }[];
+  restaurantAwards?: {
+    name: string;
+    logo: string;
+    href: string;
+    tier: string;
+    /** Use "dark" for knock-out / light logos that need a charcoal panel */
+    logoSurface?: "light" | "dark";
+  }[];
   galleryImages?: string[];
 }
 
@@ -190,7 +197,22 @@ export default function CityHero({
                 rel="noopener noreferrer"
                 className="ticket-card p-8 flex flex-col items-center gap-4 hover:border-gold/60 transition-colors"
               >
-                <Image src={r.logo} alt={r.name} width={280} height={120} className="object-contain h-20 w-auto" unoptimized />
+                <div
+                  className={`w-full rounded-lg px-4 py-5 flex min-h-[5.5rem] items-center justify-center border ${
+                    r.logoSurface === "dark"
+                      ? "bg-charcoal border-gold/30 ring-1 ring-white/10"
+                      : "border-black/[0.08] bg-cream shadow-[inset_0_1px_0_rgba(255,255,255,0.7)]"
+                  }`}
+                >
+                  <Image
+                    src={r.logo}
+                    alt={r.name}
+                    width={280}
+                    height={120}
+                    className="object-contain h-16 w-auto max-w-full"
+                    unoptimized
+                  />
+                </div>
                 <p className="font-sans text-xs uppercase tracking-widest text-gold">{r.tier}</p>
               </a>
             ))}

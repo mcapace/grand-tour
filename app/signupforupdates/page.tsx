@@ -161,13 +161,13 @@ export default function SignUpPage() {
         </p>
         <div className="flex flex-wrap justify-center gap-4">
           <Link href="/denver" className="btn-outline text-xs">
-            Denver — Apr 18
+            Denver — April 10–12, 2026
           </Link>
           <Link href="/sandiego" className="btn-outline text-xs">
-            San Diego — Apr 25
+            San Diego — March 13–15, 2026
           </Link>
           <Link href="/tampa" className="btn-outline text-xs">
-            Tampa — May 1
+            Tampa — April 17–19, 2026
           </Link>
         </div>
         <div className="mt-6">

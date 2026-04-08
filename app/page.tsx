@@ -31,21 +31,21 @@ const WINEMAKER_IMAGES = [
 const cities = [
   {
     name: "Denver",
-    date: "Saturday, April 18",
+    date: "April 10–12, 2026",
     venue: "Sheraton Denver Downtown",
     href: "/denver",
     tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-denver-164327",
   },
   {
     name: "San Diego",
-    date: "Saturday, April 25",
+    date: "March 13–15, 2026",
     venue: "Gaylord Convention Center",
     href: "/sandiego",
     tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-san-diego-164352",
   },
   {
     name: "Tampa",
-    date: "Friday, May 1",
+    date: "April 17–19, 2026",
     venue: "JW Marriott Tampa Water Street",
     href: "/tampa",
     tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-tampa-164457",
@@ -95,7 +95,7 @@ export default function HomePage() {
             alt="Wine Spectator Grand Tour"
             width={780}
             height={131}
-            className="mx-auto mb-8 w-full max-w-xl"
+            className="mx-auto mb-8 w-full max-w-xl drop-shadow-[0_4px_28px_rgba(0,0,0,0.85)] contrast-[1.08]"
             unoptimized
             priority
           />
@@ -209,14 +209,16 @@ export default function HomePage() {
       {/* Wine Spectator subscribe */}
       <section className="bg-burgundy/10 border-y border-gold/10 py-14">
         <div className="max-w-3xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
-          <Image
-            src="https://static.wixstatic.com/media/20fc31_8a55c5deeb17415e909fe346819b0948~mv2.png/v1/fill/w_394,h_212,al_c,q_85,enc_avif,quality_auto/WS%2BCvrs_394x212.png"
-            alt="Wine Spectator Magazine"
-            width={300}
-            height={161}
-            className="flex-shrink-0"
-            unoptimized
-          />
+          <div className="flex-shrink-0 rounded-lg bg-cream/95 px-4 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.65)] ring-1 ring-black/10">
+            <Image
+              src="https://static.wixstatic.com/media/20fc31_8a55c5deeb17415e909fe346819b0948~mv2.png/v1/fill/w_394,h_212,al_c,q_85,enc_avif,quality_auto/WS%2BCvrs_394x212.png"
+              alt="Wine Spectator Magazine"
+              width={300}
+              height={161}
+              className="object-contain"
+              unoptimized
+            />
+          </div>
           <div>
             <h2 className="section-heading text-3xl mb-3">Wine Spectator Magazine</h2>
             <p className="font-sans text-cream/70 text-sm leading-relaxed mb-5">
@@ -311,14 +313,14 @@ export default function HomePage() {
                 href={e.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ticket-card p-6 flex items-center justify-center hover:border-gold/60 transition-colors"
+                className="ticket-card bg-zinc-950/95 border-gold/35 p-6 flex min-h-[5.5rem] items-center justify-center hover:border-gold/60 transition-colors"
               >
                 <Image
                   src={e.logo}
                   alt={e.name}
                   width={200}
                   height={80}
-                  className="object-contain h-14 w-full"
+                  className="object-contain h-14 w-full brightness-110 contrast-105 drop-shadow-[0_0_1px_rgba(255,255,255,0.35)]"
                   unoptimized
                 />
               </a>
