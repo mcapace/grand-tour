@@ -67,8 +67,9 @@ export default function Footer() {
           <p>
             <strong className="text-cream/70">Refund Policy:</strong> A refund
             (minus processing fees) is available for all tickets until 60 days
-            prior to the event: San Diego – Jan 12, 2026 | Denver – Feb 9,
-            2026 | Tampa – Feb 16, 2026. After those dates, no refunds are
+            before that city&apos;s opening night: San Diego – Jan 12, 2026 |
+            Denver – Feb 9, 2026 | Tampa – Feb 16, 2026. After those dates, no
+            refunds are
             available.
           </p>
           <p>Must be 21 to enter; proof of age required.</p>

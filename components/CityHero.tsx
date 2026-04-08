@@ -80,12 +80,13 @@ export default function CityHero({
 
       {/* About */}
       <section className="max-w-3xl mx-auto px-6 py-16 text-center">
-        <h2 className="section-heading text-4xl mb-6">An Evening of Exceptional Wine</h2>
+        <h2 className="section-heading text-4xl mb-6">A Weekend of Exceptional Wine</h2>
         <p className="font-sans text-cream/70 leading-relaxed text-base">
-          Enjoy an evening of exceptional wines from the world&apos;s best wine-growing regions at
-          Wine Spectator&apos;s Grand Tour. All wines are rated 90 points or higher by Wine
-          Spectator&apos;s editors. Meet the winemakers, enjoy a delicious selection of food and take
-          home a souvenir Riedel™ wine glass — all included in your ticket price.
+          Join us in {city} for <strong className="text-cream/90">three nights</strong> of Grand Tour—
+          {date}. Each evening you&apos;ll taste exceptional wines from the world&apos;s best
+          wine-growing regions. Every wine is rated 90 points or higher by Wine Spectator&apos;s
+          editors. Meet the winemakers, enjoy a delicious selection of food, and take home a souvenir
+          Riedel™ wine glass — included with the sessions your ticket covers.
         </p>
       </section>
 
@@ -154,10 +155,10 @@ export default function CityHero({
           <h2 className="section-heading text-3xl mb-4">Young Connoisseur Program</h2>
           <p className="font-sans text-cream/70 leading-relaxed mb-6">
             Wine Spectator is introducing a new initiative to welcome the next generation of wine
-            lovers. Guests <strong>30 and under</strong> can purchase a General Admission ticket for
-            only <strong className="text-gold">$100</strong>, making it easier for young professionals
-            and emerging connoisseurs to experience our world-class tastings. Valid proof of age is
-            required at the door.
+            lovers. Guests <strong>30 and under</strong> can purchase General Admission for
+            only <strong className="text-gold">$100</strong> per tasting session, making it easier
+            for young professionals and emerging connoisseurs to join us. Valid proof of age is
+            required at check-in.
           </p>
           <a href={tixrUrl} target="_blank" rel="noopener noreferrer" className="btn-gold">
             Buy Young Connoisseur Ticket — $100
@@ -169,9 +170,10 @@ export default function CityHero({
       <section className="max-w-3xl mx-auto px-6 py-16 text-center">
         <h2 className="section-heading text-4xl mb-4">Wineries &amp; Wines</h2>
         <p className="font-sans text-cream/70 leading-relaxed mb-8">
-          Taste from an incredible line-up of 200+ wines from the world&apos;s best wine-growing
-          regions — Argentina, Australia, Italy, France, Chile, Spain, Portugal, New Zealand, the
-          United States and more. All rated 90 points or higher by Wine Spectator&apos;s editors.
+          Each evening features an incredible line-up of 200+ wines from the world&apos;s best
+          wine-growing regions — Argentina, Australia, Italy, France, Chile, Spain, Portugal, New
+          Zealand, the United States and more. All rated 90 points or higher by Wine
+          Spectator&apos;s editors.
         </p>
         <Link href="/wineswineries" className="btn-outline">
           See Wineries &amp; Wines

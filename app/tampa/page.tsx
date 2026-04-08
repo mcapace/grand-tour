@@ -4,14 +4,14 @@ import CityHero from "@/components/CityHero";
 export const metadata: Metadata = {
   title: "Tampa | Wine Spectator Grand Tour 2026",
   description:
-    "Wine Spectator's Grand Tour Tampa — April 17–19, 2026 at JW Marriott Tampa Water Street. Taste 200+ wines rated 90+ points.",
+    "Wine Spectator's Grand Tour Tampa — weekend of April 17–19, 2026 (Fri–Sun) at JW Marriott Tampa Water Street. Three nights of 90+ point wines.",
 };
 
 export default function TampaPage() {
   return (
     <CityHero
       city="Tampa"
-      date="April 17–19, 2026"
+      date="Friday–Sunday, April 17–19, 2026"
       venue="JW Marriott Tampa Water Street"
       heroImage="https://static.wixstatic.com/media/87b21c_8f83d316b4dc4a07aa84bc10befcb7e3~mv2.jpg/v1/fit/w_963,h_700,q_90,enc_avif,quality_auto/87b21c_8f83d316b4dc4a07aa84bc10befcb7e3~mv2.jpg"
       tixrUrl="https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-tampa-164457"
@@ -19,10 +19,10 @@ export default function TampaPage() {
         {
           label: "VIP Admission",
           price: "$395",
-          hours: "6:00 – 9:30 PM",
+          hours: "Nightly · 6:00 – 9:30 PM",
           highlight: true,
           perks: [
-            "Exclusive extra hour of tasting (6:00–7:00 PM)",
+            "Exclusive first hour for VIPs each night (6:00–7:00 PM) before General Admission",
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",
             "Delicious selection of food",
@@ -31,7 +31,7 @@ export default function TampaPage() {
         {
           label: "General Admission",
           price: "$250",
-          hours: "7:00 – 9:30 PM",
+          hours: "Nightly · 7:00 – 9:30 PM",
           perks: [
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",
@@ -41,7 +41,7 @@ export default function TampaPage() {
         {
           label: "Young Connoisseur (30 & Under)",
           price: "$100",
-          hours: "7:00 – 9:30 PM",
+          hours: "Nightly · 7:00 – 9:30 PM",
           perks: [
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",

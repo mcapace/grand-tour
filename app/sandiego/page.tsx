@@ -4,14 +4,14 @@ import CityHero from "@/components/CityHero";
 export const metadata: Metadata = {
   title: "San Diego | Wine Spectator Grand Tour 2026",
   description:
-    "Wine Spectator's Grand Tour San Diego — March 13–15, 2026 at Gaylord Convention Center. Taste 200+ wines rated 90+ points.",
+    "Wine Spectator's Grand Tour San Diego — weekend of March 13–15, 2026 (Fri–Sun) at Gaylord Convention Center. Three nights of 90+ point wines.",
 };
 
 export default function SanDiegoPage() {
   return (
     <CityHero
       city="San Diego"
-      date="March 13–15, 2026"
+      date="Friday–Sunday, March 13–15, 2026"
       venue="Gaylord Convention Center"
       heroImage="https://static.wixstatic.com/media/87b21c_265dae08eaee43d4aec1e436c47328e1~mv2.jpg/v1/fit/w_805,h_700,q_90,enc_avif,quality_auto/87b21c_265dae08eaee43d4aec1e436c47328e1~mv2.jpg"
       tixrUrl="https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-san-diego-164352"
@@ -20,10 +20,10 @@ export default function SanDiegoPage() {
         {
           label: "VIP Admission",
           price: "$395",
-          hours: "6:00 – 9:30 PM",
+          hours: "Nightly · 6:00 – 9:30 PM",
           highlight: true,
           perks: [
-            "Exclusive extra hour of tasting (6:00–7:00 PM)",
+            "Exclusive first hour for VIPs each night (6:00–7:00 PM) before General Admission",
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",
             "Delicious selection of food",
@@ -32,7 +32,7 @@ export default function SanDiegoPage() {
         {
           label: "General Admission",
           price: "$250",
-          hours: "7:00 – 9:30 PM",
+          hours: "Nightly · 7:00 – 9:30 PM",
           perks: [
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",
@@ -42,7 +42,7 @@ export default function SanDiegoPage() {
         {
           label: "Young Connoisseur (30 & Under)",
           price: "$100",
-          hours: "7:00 – 9:30 PM",
+          hours: "Nightly · 7:00 – 9:30 PM",
           perks: [
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",

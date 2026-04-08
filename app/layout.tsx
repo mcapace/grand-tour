@@ -6,10 +6,11 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Wine Spectator's Grand Tour",
   description:
-    "3 Cities. 3 Spectacular Tastings. San Diego March 13–15, Denver April 10–12, Tampa April 17–19, 2026 — taste 200+ wines rated 90+ points by Wine Spectator editors.",
+    "Three cities, three weekends of walk-around tastings in 2026: San Diego Mar 13–15, Denver Apr 10–12, Tampa Apr 17–19 (each Fri–Sun). 200+ wines rated 90+ by Wine Spectator editors.",
   openGraph: {
     title: "Wine Spectator's Grand Tour",
-    description: "3 Cities. 3 Spectacular Tastings.",
+    description:
+      "Three weekend destinations in 2026—walk-around tastings Fri–Sun, 200+ wines rated 90+.",
     images: [
       "https://static.wixstatic.com/media/87b21c_fd04523daf3640989761afa9d8a7bdf5~mv2.avif",
     ],

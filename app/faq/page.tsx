@@ -9,11 +9,11 @@ const faqs = [
   },
   {
     q: "What is included in the VIP ticket?",
-    a: "Everything outlined above plus an extra hour to taste — VIP admission starts at 6:00 PM.",
+    a: "Everything in General Admission, plus an extra hour of tasting every night of the weekend. VIP doors open at 6:00 PM; General Admission begins at 7:00 PM.",
   },
   {
     q: "What time does the Grand Tour start?",
-    a: "The event runs from 7:00–9:30 PM. VIP admission begins at 6:00 PM for an extra hour of tasting.",
+    a: "Each city hosts Grand Tour Friday through Sunday. General Admission hours are 7:00–9:30 PM each night. VIP ticket holders may enter at 6:00 PM for the additional tasting hour. Always confirm your exact session on your Tixr ticket.",
   },
   {
     q: "What is the dress code?",
@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "How do I request a refund or exchange?",
-    a: "A refund (minus processing fees) is available for all tickets until 60 days prior to the event: San Diego – Jan 12, 2026 | Denver – Feb 9, 2026 | Tampa – Feb 16, 2026. After those dates there are no more refunds. To request a refund or exchange please send your request to events@mshanken.com.",
+    a: "A refund (minus processing fees) is available until 60 days before that city’s opening night: San Diego – Jan 12, 2026 | Denver – Feb 9, 2026 | Tampa – Feb 16, 2026. After those dates there are no more refunds. To request a refund or exchange please send your request to events@mshanken.com.",
   },
   {
     q: "Can I transfer my ticket to a friend?",
@@ -37,11 +37,11 @@ const faqs = [
   },
   {
     q: "Will there be food at the tasting?",
-    a: "Yes, there will be a light buffet with a variety of options to enjoy during the tasting.",
+    a: "Yes — expect a generous selection of food to enjoy during each evening’s tasting session.",
   },
   {
     q: "Is there a Young Connoisseur program?",
-    a: "Yes! Guests 30 and under can purchase a General Admission ticket for $100. Valid proof of age required at the door.",
+    a: "Yes! Guests 30 and under can purchase General Admission for $100 per tasting session where the program is offered. Valid proof of age is required at check-in.",
   },
   {
     q: "Additional questions?",

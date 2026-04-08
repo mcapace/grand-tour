@@ -31,21 +31,21 @@ const WINEMAKER_IMAGES = [
 const cities = [
   {
     name: "San Diego",
-    date: "March 13–15, 2026",
+    date: "Fri–Sun · March 13–15, 2026",
     venue: "Gaylord Convention Center",
     href: "/sandiego",
     tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-san-diego-164352",
   },
   {
     name: "Denver",
-    date: "April 10–12, 2026",
+    date: "Fri–Sun · April 10–12, 2026",
     venue: "Sheraton Denver Downtown",
     href: "/denver",
     tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-denver-164327",
   },
   {
     name: "Tampa",
-    date: "April 17–19, 2026",
+    date: "Fri–Sun · April 17–19, 2026",
     venue: "JW Marriott Tampa Water Street",
     href: "/tampa",
     tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-tampa-164457",
@@ -100,7 +100,7 @@ export default function HomePage() {
             priority
           />
           <h2 className="section-heading text-3xl md:text-5xl mb-10">
-            3 Cities. 3 Spectacular Tastings.
+            3 Cities. 3 Spectacular Weekends.
           </h2>
           <a
             href="https://www.tixr.com/groups/wsgrandtour"
@@ -175,10 +175,11 @@ export default function HomePage() {
           Taste Over 200 Wines Rated 90+ Points
         </h2>
         <p className="font-sans text-cream/70 leading-relaxed text-base mb-10">
-          Enjoy an evening of exceptional wines from the world&apos;s best wine-growing regions.
-          All wines are rated 90 points or higher by Wine Spectator&apos;s editors. Meet the
-          winemakers, enjoy a delicious selection of food and take home a souvenir Riedel™ wine
-          glass — all included in your ticket price.
+          Each Grand Tour is a <strong className="text-cream/90">three-day weekend</strong> of
+          walk-around tastings—Friday through Sunday—with 200+ wines rated 90 points or higher. Meet
+          winemakers, enjoy chef-prepared bites, and take home a souvenir Riedel™ wine glass (included
+          with the sessions your ticket covers). Choose your city and join us for one night—or make a
+          weekend of it.
         </p>
         <Link href="/signupforupdates" className="btn-outline">
           Sign Up For Updates

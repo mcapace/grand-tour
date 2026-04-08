@@ -4,25 +4,25 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Wineries & Wines | Wine Spectator Grand Tour 2026",
   description:
-    "Explore the 200+ wines and wineries pouring at Wine Spectator's Grand Tour. All rated 90+ points.",
+    "Explore the 200+ wines and wineries at Wine Spectator's Grand Tour weekend tastings (Fri–Sun). All rated 90+ points.",
 };
 
 const cities = [
   {
     name: "San Diego",
-    date: "March 13–15, 2026",
+    date: "Fri–Sun · March 13–15, 2026",
     tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-san-diego-164352",
     href: "/sandiego",
   },
   {
     name: "Denver",
-    date: "April 10–12, 2026",
+    date: "Fri–Sun · April 10–12, 2026",
     tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-denver-164327",
     href: "/denver",
   },
   {
     name: "Tampa",
-    date: "April 17–19, 2026",
+    date: "Fri–Sun · April 17–19, 2026",
     tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-tampa-164457",
     href: "/tampa",
   },
@@ -52,7 +52,8 @@ export default function WineriesWinesPage() {
               <h2 className="section-heading text-4xl">{c.name}</h2>
               <p className="font-sans text-gold text-sm">{c.date}</p>
               <p className="font-sans text-cream/50 text-sm flex-1">
-                Wineries &amp; wines list coming soon! Check back closer to the event date.
+                Wineries &amp; wines list coming soon! Check back as we get closer to your Grand Tour
+                weekend.
               </p>
               <div className="flex flex-col gap-2">
                 <a

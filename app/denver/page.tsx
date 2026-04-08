@@ -4,14 +4,14 @@ import CityHero from "@/components/CityHero";
 export const metadata: Metadata = {
   title: "Denver | Wine Spectator Grand Tour 2026",
   description:
-    "Wine Spectator's Grand Tour Denver — April 10–12, 2026 at Sheraton Denver Downtown. Taste 200+ wines rated 90+ points.",
+    "Wine Spectator's Grand Tour Denver — weekend of April 10–12, 2026 (Fri–Sun) at Sheraton Denver Downtown. Three nights of 90+ point wines.",
 };
 
 export default function DenverPage() {
   return (
     <CityHero
       city="Denver"
-      date="April 10–12, 2026"
+      date="Friday–Sunday, April 10–12, 2026"
       venue="Sheraton Denver Downtown"
       venueAddress="1550 Court Pl, Denver, CO 80202"
       venuePhone="(303) 893-3333"
@@ -23,10 +23,10 @@ export default function DenverPage() {
         {
           label: "VIP Admission",
           price: "$395",
-          hours: "6:00 – 9:30 PM",
+          hours: "Nightly · 6:00 – 9:30 PM",
           highlight: true,
           perks: [
-            "Exclusive extra hour of tasting (6:00–7:00 PM)",
+            "Exclusive first hour for VIPs each night (6:00–7:00 PM) before General Admission",
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",
             "Delicious selection of food",
@@ -35,7 +35,7 @@ export default function DenverPage() {
         {
           label: "General Admission",
           price: "$250",
-          hours: "7:00 – 9:30 PM",
+          hours: "Nightly · 7:00 – 9:30 PM",
           perks: [
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",
@@ -45,7 +45,7 @@ export default function DenverPage() {
         {
           label: "Young Connoisseur (30 & Under)",
           price: "$100",
-          hours: "7:00 – 9:30 PM",
+          hours: "Nightly · 7:00 – 9:30 PM",
           perks: [
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",
