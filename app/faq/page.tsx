@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 
-export const metadata = undefined; // metadata must be in a server component; use generateMetadata or move to layout
-
 const faqs = [
   {
     q: "What is included in the ticket price?",
