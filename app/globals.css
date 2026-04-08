@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-jost: 'Jost', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1C1C1C;
+  color: #F5F0E8;
+  font-family: var(--font-jost);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Wine row decorative strip */
+.wine-row-strip {
+  width: 100%;
+  height: 60px;
+  background-image: url('https://static.wixstatic.com/media/87b21c_6efdaecc7f804c1d885862067dd38515~mv2.png/v1/crop/x_6,y_0,w_4031,h_799/fill/w_979,h_194,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/winerow.png');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.6;
+}
+
+/* Marquee / scroll strip */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-left 40s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Animated underline on nav links */
+.nav-link {
+  position: relative;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #C9A84C;
+  transition: color 0.2s;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: #C9A84C;
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Ticket card */
+.ticket-card {
+  border: 1px solid rgba(201, 168, 76, 0.3);
+  background: rgba(255,255,255,0.03);
+  backdrop-filter: blur(4px);
+}
+
+/* Gold CTA button */
+.btn-gold {
+  display: inline-block;
+  background: #C9A84C;
+  color: #1C1C1C;
+  font-family: var(--font-jost);
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  padding: 0.85rem 2.5rem;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-gold:hover {
+  background: #DFC077;
+  transform: translateY(-1px);
+}
+
+/* Outline button */
+.btn-outline {
+  display: inline-block;
+  border: 1px solid #C9A84C;
+  color: #C9A84C;
+  font-family: var(--font-jost);
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  font-size: 0.72rem;
+  padding: 0.85rem 2.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn-outline:hover {
+  background: #C9A84C;
+  color: #1C1C1C;
+}
+
+/* Section heading */
+.section-heading {
+  font-family: var(--font-cormorant);
+  font-weight: 300;
+  letter-spacing: 0.06em;
+  color: #F5F0E8;
+}
+
+/* Gold rule */
+.gold-rule {
+  border: none;
+  border-top: 1px solid rgba(201, 168, 76, 0.4);
+}
+
+/* FAQ accordion */
+details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+details summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] .chevron {
+  transform: rotate(180deg);
+}
+
+.chevron {
+  transition: transform 0.3s ease;
+}
+
+/* Fade-up animation utility */
+.fade-up {
+  opacity: 0;
+  transform: translateY(24px);
+  animation: fade-up 0.7s ease-out forwards;
+}
+
+@keyframes fade-up {
+  to { opacity: 1; transform: translateY(0); }
+}
