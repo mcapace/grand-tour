@@ -4,7 +4,7 @@ import CityHero from "@/components/CityHero";
 export const metadata: Metadata = {
   title: "Denver | Wine Spectator Grand Tour 2026",
   description:
-    "Wine Spectator's Grand Tour Denver — weekend of April 10–12, 2026 (Fri–Sun) at Sheraton Denver Downtown. Three nights of 90+ point wines.",
+    "Grand Tour Denver, Apr 10–12, 2026: Fri/Sat 10 AM seminars, lunch, afternoon session, evening walk-around; Sun goodbye breakfast. Sheraton Denver Downtown.",
 };
 
 export default function DenverPage() {
@@ -23,39 +23,39 @@ export default function DenverPage() {
         {
           label: "VIP Admission",
           price: "$395",
-          hours: "Nightly · 6:00 – 9:30 PM",
+          hours: "Fri & Sat evenings · 6:00 – 9:30 PM",
           highlight: true,
           perks: [
-            "Morning seminars Friday–Sunday (times announced before the event)",
-            "Sunday breakfast",
-            "Exclusive first hour for VIPs each night (6:00–7:00 PM) before General Admission",
+            "Fri & Sat daytime: 10:00 AM seminars, lunch, afternoon session",
+            "Sunday: goodbye breakfast (no evening tasting)",
+            "Fri & Sat evenings: VIP from 6:00 PM (extra hour before General Admission)",
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",
-            "Delicious selection of food",
+            "Food during Fri/Sat program & evening walk-around",
           ],
         },
         {
           label: "General Admission",
           price: "$250",
-          hours: "Nightly · 7:00 – 9:30 PM",
+          hours: "Fri & Sat evenings · 7:00 – 9:30 PM",
           perks: [
-            "Morning seminars Friday–Sunday (times announced before the event)",
-            "Sunday breakfast",
+            "Fri & Sat daytime: 10:00 AM seminars, lunch, afternoon session",
+            "Sunday: goodbye breakfast (no evening tasting)",
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",
-            "Delicious selection of food",
+            "Food during Fri/Sat program & evening walk-around",
           ],
         },
         {
           label: "Young Connoisseur (30 & Under)",
           price: "$100",
-          hours: "Nightly · 7:00 – 9:30 PM",
+          hours: "Fri & Sat evenings · 7:00 – 9:30 PM",
           perks: [
-            "Morning seminars Friday–Sunday (times announced before the event)",
-            "Sunday breakfast",
+            "Eligible Fri/Sat daytime + Sunday breakfast when included in your pass (see Tixr)",
+            "Fri or Sat evening General Admission where Young Connoisseur is offered",
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",
-            "Delicious selection of food",
+            "Food during included sessions",
             "Valid proof of age required",
           ],
         },

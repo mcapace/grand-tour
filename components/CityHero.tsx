@@ -82,25 +82,32 @@ export default function CityHero({
       <section className="max-w-3xl mx-auto px-6 py-16 text-center">
         <h2 className="section-heading text-4xl mb-6">A Weekend of Exceptional Wine</h2>
         <p className="font-sans text-cream/70 leading-relaxed text-base">
-          Join us in {city} for <strong className="text-cream/90">three nights</strong> of Grand Tour—
-          {date}. Each evening you&apos;ll taste exceptional wines from the world&apos;s best
-          wine-growing regions. Every wine is rated 90 points or higher by Wine Spectator&apos;s
-          editors. Meet the winemakers, enjoy a delicious selection of food, and take home a souvenir
-          Riedel™ wine glass — included with the sessions your ticket covers.
+          Join us in {city} for a <strong className="text-cream/90">three-day weekend</strong>—
+          {date}. <strong className="text-cream/90">Friday and Saturday</strong> combine daytime
+          programming with the signature evening walk-around Grand Tour.{" "}
+          <strong className="text-cream/90">Sunday</strong> is our send-off: a farewell breakfast
+          together—no evening tasting that day. Every pour at the main events is rated 90 points or
+          higher by Wine Spectator&apos;s editors. Meet winemakers, enjoy food throughout the day and
+          evening, and take home a souvenir Riedel™ wine glass—included with the package your ticket
+          covers (see Tixr for full-weekend vs single-day options).
         </p>
       </section>
 
-      {/* Daytime: seminars + Sunday breakfast */}
+      {/* Weekend schedule: Fri/Sat full day + Sun breakfast */}
       <section className="max-w-3xl mx-auto px-6 pb-16 text-center border-b border-gold/10">
-        <h2 className="section-heading text-3xl md:text-4xl mb-4">Mornings &amp; More</h2>
+        <h2 className="section-heading text-3xl md:text-4xl mb-4">Your Weekend Schedule</h2>
+        <p className="font-sans text-cream/70 leading-relaxed text-base mb-6">
+          <strong className="text-cream/90">Friday &amp; Saturday</strong> follow the same rhythm:{" "}
+          <strong className="text-cream/90">10:00 AM</strong> start for seminars and conversation with
+          editors, winemakers, and guests—then <strong className="text-cream/90">lunch</strong>, an{" "}
+          <strong className="text-cream/90">afternoon session</strong>, and finally the{" "}
+          <strong className="text-cream/90">evening Grand Tour</strong> walk-around with 200+ wines.
+          Room assignments and session topics are announced before the event.
+        </p>
         <p className="font-sans text-cream/70 leading-relaxed text-base">
-          <strong className="text-cream/90">Seminars</strong> kick off in the morning each day—
-          Friday, Saturday, and Sunday—          with editors, winemakers, and special guests (topics and
-          start times will be posted before the event). On <strong className="text-cream/90">Sunday
-          morning</strong>, relax over a full <strong className="text-cream/90">breakfast</strong>{" "}
-          with fellow wine lovers before the day&apos;s sessions. Morning programming and Sunday
-          breakfast are included with your Grand Tour ticket—see Tixr for details on full-weekend
-          and single-session options.
+          <strong className="text-cream/90">Sunday</strong> is intentionally lighter: join us for a{" "}
+          <strong className="text-cream/90">goodbye breakfast</strong> as we close the weekend—no
+          seminars or evening main event that day.
         </p>
       </section>
 
@@ -170,9 +177,9 @@ export default function CityHero({
           <p className="font-sans text-cream/70 leading-relaxed mb-6">
             Wine Spectator is introducing a new initiative to welcome the next generation of wine
             lovers. Guests <strong>30 and under</strong> can purchase General Admission for
-            only <strong className="text-gold">$100</strong> per tasting session, making it easier
-            for young professionals and emerging connoisseurs to join us. Valid proof of age is
-            required at check-in.
+            only <strong className="text-gold">$100</strong> per qualifying evening (Friday or
+            Saturday main event—see Tixr), making it easier for young professionals and emerging
+            connoisseurs to join us. Valid proof of age is required at check-in.
           </p>
           <a href={tixrUrl} target="_blank" rel="noopener noreferrer" className="btn-gold">
             Buy Young Connoisseur Ticket — $100
@@ -184,10 +191,10 @@ export default function CityHero({
       <section className="max-w-3xl mx-auto px-6 py-16 text-center">
         <h2 className="section-heading text-4xl mb-4">Wineries &amp; Wines</h2>
         <p className="font-sans text-cream/70 leading-relaxed mb-8">
-          Each evening features an incredible line-up of 200+ wines from the world&apos;s best
-          wine-growing regions — Argentina, Australia, Italy, France, Chile, Spain, Portugal, New
-          Zealand, the United States and more. All rated 90 points or higher by Wine
-          Spectator&apos;s editors.
+          <strong className="text-cream/90">Friday and Saturday evenings</strong>, the main Grand Tour
+          floor features 200+ wines from the world&apos;s best regions—Argentina, Australia, Italy,
+          France, Chile, Spain, Portugal, New Zealand, the United States and more. All rated 90
+          points or higher by Wine Spectator&apos;s editors.
         </p>
         <Link href="/wineswineries" className="btn-outline">
           See Wineries &amp; Wines

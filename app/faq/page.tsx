@@ -5,19 +5,19 @@ import { useState } from "react";
 const faqs = [
   {
     q: "What is included in the ticket price?",
-    a: "Full-weekend passes include morning seminars Friday through Sunday, Sunday breakfast, evening walk-around tastings (200+ wines rated 90+), a souvenir Riedel™ wine glass, and food during the evening sessions. If you purchase a single-night ticket, daytime events may not apply—check Tixr for your package. Seminar topics and morning times are announced before the event.",
+    a: "Full-weekend packages include everything for Friday and Saturday—10:00 AM seminars, lunch, an afternoon session, the evening walk-around Grand Tour (200+ wines rated 90+), food during those days, and a souvenir Riedel™ wine glass—as well as Sunday’s goodbye breakfast. Sunday has no seminars or evening tasting. Single-day options may differ; see Tixr for exactly what your pass covers.",
   },
   {
     q: "What is included in the VIP ticket?",
-    a: "Everything in General Admission, plus an extra hour of tasting every night of the weekend. VIP doors open at 6:00 PM; General Admission begins at 7:00 PM.",
+    a: "Everything in General Admission for Friday and Saturday’s main events, plus an extra hour on the tasting floor before General Admission each of those nights: VIP from 6:00 PM, General Admission from 7:00 PM (both nights end at 9:30 PM). Sunday is breakfast only—no evening session.",
   },
   {
     q: "What time does the Grand Tour start?",
-    a: "Days begin with morning seminars (Friday–Sunday); exact start times will be shared before the event. Sunday includes breakfast. Evening walk-around tastings run 7:00–9:30 PM nightly (VIP entry from 6:00 PM). Confirm all times on your Tixr ticket.",
+    a: "Friday and Saturday: the day begins at 10:00 AM with seminars, followed by lunch, an afternoon session, then the evening walk-around (VIP 6:00–9:30 PM · General Admission 7:00–9:30 PM). Sunday is a goodbye breakfast only—no 10:00 AM start and no evening Grand Tour. Final timings are on your Tixr ticket.",
   },
   {
-    q: "Tell me about the seminars and Sunday breakfast.",
-    a: "Each morning—Friday, Saturday, and Sunday—we host seminars with Wine Spectator editors, winemakers, and guests. On Sunday, breakfast is served as part of the weekend. Schedules and room assignments are published closer to your Grand Tour date.",
+    q: "How does Sunday work compared to Friday and Saturday?",
+    a: "Friday and Saturday are full days ending with the main tasting. Sunday is a relaxed farewell: we host a goodbye breakfast so guests can wrap up the weekend together. There are no seminars or evening Grand Tour on Sunday.",
   },
   {
     q: "What is the dress code?",
@@ -41,11 +41,11 @@ const faqs = [
   },
   {
     q: "Will there be food at the tasting?",
-    a: "Yes — chef-prepared bites during each evening tasting, plus a full Sunday breakfast as part of the weekend schedule.",
+    a: "Yes—lunch is served on Friday and Saturday between the morning and afternoon programming, chef-prepared bites during each evening walk-around, and a Sunday goodbye breakfast.",
   },
   {
     q: "Is there a Young Connoisseur program?",
-    a: "Yes! Guests 30 and under can purchase General Admission for $100 per tasting session where the program is offered. Valid proof of age is required at check-in.",
+    a: "Yes! Guests 30 and under can purchase General Admission for $100 for a qualifying Friday or Saturday main evening where the program is offered (see Tixr). Valid proof of age is required at check-in.",
   },
   {
     q: "Additional questions?",

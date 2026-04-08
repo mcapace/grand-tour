@@ -175,12 +175,15 @@ export default function HomePage() {
           Taste Over 200 Wines Rated 90+ Points
         </h2>
         <p className="font-sans text-cream/70 leading-relaxed text-base mb-10">
-          Each Grand Tour is a <strong className="text-cream/90">three-day weekend</strong> of
-          walk-around tastings—Friday through Sunday—with 200+ wines rated 90 points or higher.{" "}
-          <strong className="text-cream/90">Mornings</strong> begin with seminars every day;{" "}
-          <strong className="text-cream/90">Sunday</strong> includes breakfast. Evenings bring
-          winemakers, chef-prepared bites, and your souvenir Riedel™ wine glass (included with the
-          sessions your ticket covers). Choose your city—or make a full weekend of it.
+          Each Grand Tour is a <strong className="text-cream/90">three-day weekend</strong> built
+          around <strong className="text-cream/90">Friday and Saturday</strong>: days start at{" "}
+          <strong className="text-cream/90">10:00 AM</strong> with seminars, then{" "}
+          <strong className="text-cream/90">lunch</strong>, an{" "}
+          <strong className="text-cream/90">afternoon session</strong>, and the signature evening
+          walk-around with 200+ wines rated 90+.{" "}
+          <strong className="text-cream/90">Sunday</strong> is a{" "}
+          <strong className="text-cream/90">goodbye breakfast</strong> only—no main event that night.
+          Your Riedel™ glass and food throughout the package are included per your Tixr pass.
         </p>
         <Link href="/signupforupdates" className="btn-outline">
           Sign Up For Updates
