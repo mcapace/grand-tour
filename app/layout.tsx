@@ -1,7 +1,13 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  themeColor: "#1C1C1C",
+};
 
 export const metadata: Metadata = {
   title: "Wine Spectator's Grand Tour",
@@ -24,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="min-h-screen flex flex-col bg-charcoal text-cream">
+      <body className="min-h-screen flex flex-col overflow-x-hidden bg-charcoal text-cream antialiased">
         <Nav />
         <main className="flex-1">{children}</main>
         <Footer />

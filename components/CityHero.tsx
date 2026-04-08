@@ -48,7 +48,7 @@ export default function CityHero({
   return (
     <>
       {/* Hero */}
-      <section className="relative h-[65vh] min-h-[480px] flex items-end overflow-hidden">
+      <section className="relative flex min-h-[360px] h-[min(58vh,520px)] sm:min-h-[480px] sm:h-[65vh] items-end overflow-hidden">
         <Image
           src={heroImage}
           alt={`Grand Tour ${city}`}
@@ -58,19 +58,31 @@ export default function CityHero({
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/50 to-transparent" />
-        <div className="relative z-10 max-w-5xl mx-auto px-6 pb-16 w-full">
-          <p className="font-sans text-gold uppercase tracking-[0.2em] text-xs mb-3">
+        <div className="relative z-10 max-w-5xl mx-auto w-full px-4 pb-10 sm:px-6 sm:pb-16">
+          <p className="font-sans text-gold uppercase tracking-[0.12em] sm:tracking-[0.2em] text-[0.65rem] sm:text-xs mb-2 sm:mb-3">
             Presented by the Wine Spectator Scholarship Foundation
           </p>
-          <h1 className="section-heading text-6xl md:text-8xl mb-2">{city}</h1>
-          <p className="font-sans text-cream/80 text-lg">{date}</p>
-          <p className="font-sans text-cream/60 text-base mb-8">{venue}</p>
-          <div className="flex flex-wrap gap-3">
-            <a href={tixrUrl} target="_blank" rel="noopener noreferrer" className="btn-gold">
+          <h1 className="section-heading text-[2.75rem] leading-none sm:text-6xl md:text-8xl mb-2 break-words">
+            {city}
+          </h1>
+          <p className="font-sans text-cream/80 text-base sm:text-lg leading-snug">{date}</p>
+          <p className="font-sans text-cream/60 text-sm sm:text-base mb-6 sm:mb-8">{venue}</p>
+          <div className="flex flex-col sm:flex-row flex-wrap gap-3">
+            <a
+              href={tixrUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-gold inline-flex w-full sm:w-auto items-center justify-center text-center"
+            >
               Buy Tickets
             </a>
             {floorPlanUrl && (
-              <a href={floorPlanUrl} target="_blank" rel="noopener noreferrer" className="btn-outline">
+              <a
+                href={floorPlanUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-outline inline-flex w-full sm:w-auto items-center justify-center text-center"
+              >
                 View Floor Plan
               </a>
             )}
@@ -79,9 +91,11 @@ export default function CityHero({
       </section>
 
       {/* About */}
-      <section className="max-w-3xl mx-auto px-6 py-16 text-center">
-        <h2 className="section-heading text-4xl mb-6">A Weekend of Exceptional Wine</h2>
-        <p className="font-sans text-cream/70 leading-relaxed text-base">
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
+        <h2 className="section-heading text-3xl sm:text-4xl mb-5 sm:mb-6 text-balance">
+          A Weekend of Exceptional Wine
+        </h2>
+        <p className="font-sans text-cream/70 leading-relaxed text-base text-pretty">
           Join us in {city} for a <strong className="text-cream/90">three-day weekend</strong>—
           {date}. <strong className="text-cream/90">Friday and Saturday</strong> combine daytime
           programming with the signature evening walk-around Grand Tour.{" "}
@@ -94,9 +108,11 @@ export default function CityHero({
       </section>
 
       {/* Weekend schedule: Fri/Sat full day + Sun breakfast */}
-      <section className="max-w-3xl mx-auto px-6 pb-16 text-center border-b border-gold/10">
-        <h2 className="section-heading text-3xl md:text-4xl mb-4">Your Weekend Schedule</h2>
-        <p className="font-sans text-cream/70 leading-relaxed text-base mb-6">
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 pb-12 sm:pb-16 text-center border-b border-gold/10">
+        <h2 className="section-heading text-2xl sm:text-3xl md:text-4xl mb-4 text-balance">
+          Your Weekend Schedule
+        </h2>
+        <p className="font-sans text-cream/70 leading-relaxed text-base mb-6 text-pretty">
           <strong className="text-cream/90">Friday &amp; Saturday</strong> follow the same rhythm:{" "}
           <strong className="text-cream/90">10:00 AM</strong> start for seminars and conversation with
           editors, winemakers, and guests—then <strong className="text-cream/90">lunch</strong>, an{" "}
@@ -104,7 +120,7 @@ export default function CityHero({
           <strong className="text-cream/90">evening Grand Tour</strong> walk-around with 200+ wines.
           Room assignments and session topics are announced before the event.
         </p>
-        <p className="font-sans text-cream/70 leading-relaxed text-base">
+        <p className="font-sans text-cream/70 leading-relaxed text-base text-pretty">
           <strong className="text-cream/90">Sunday</strong> is intentionally lighter: join us for a{" "}
           <strong className="text-cream/90">goodbye breakfast</strong> as we close the weekend—no
           seminars or evening main event that day.
@@ -113,8 +129,8 @@ export default function CityHero({
 
       {/* Gallery strip */}
       {galleryImages && galleryImages.length > 0 && (
-        <section className="overflow-hidden py-4">
-          <div className="marquee-track">
+        <section className="overflow-hidden py-4 w-full max-w-[100vw]">
+          <div className="marquee-track touch-pan-y">
             {[...galleryImages, ...galleryImages].map((src, i) => (
               <div key={i} className="flex-shrink-0 w-48 h-48 mx-1 overflow-hidden">
                 <Image
@@ -132,34 +148,39 @@ export default function CityHero({
       )}
 
       {/* Tickets */}
-      <section id="tickets" className="max-w-5xl mx-auto px-6 py-16">
-        <h2 className="section-heading text-4xl text-center mb-2">Tickets</h2>
-        <p className="text-center text-gold font-sans text-xs uppercase tracking-widest mb-10">
+      <section id="tickets" className="max-w-5xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+        <h2 className="section-heading text-3xl sm:text-4xl text-center mb-2">Tickets</h2>
+        <p className="text-center text-gold font-sans text-[0.65rem] sm:text-xs uppercase tracking-widest mb-8 sm:mb-10 leading-snug px-1 break-words">
           {venue.toUpperCase()} · {date.toUpperCase()}
         </p>
-        <div className="grid md:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
           {tickets.map((t) => (
             <div
               key={t.label}
-              className={`ticket-card p-8 flex flex-col gap-4 ${
+              className={`ticket-card p-5 sm:p-8 flex flex-col gap-4 ${
                 t.highlight ? "border-gold/60 bg-gold/5" : ""
               }`}
             >
               <div>
                 <p className="font-sans text-xs uppercase tracking-widest text-gold mb-1">{t.label}</p>
-                <p className="section-heading text-5xl mb-1">{t.price}</p>
-                <p className="font-sans text-cream/60 text-sm">{t.hours}</p>
+                <p className="section-heading text-4xl sm:text-5xl mb-1">{t.price}</p>
+                <p className="font-sans text-cream/60 text-sm leading-snug">{t.hours}</p>
               </div>
               <hr className="gold-rule" />
               <ul className="space-y-2 flex-1">
                 {t.perks.map((p) => (
-                  <li key={p} className="font-sans text-sm text-cream/70 flex gap-2">
-                    <span className="text-gold mt-0.5">✦</span>
-                    {p}
+                  <li key={p} className="font-sans text-sm text-cream/70 flex gap-2 text-pretty">
+                    <span className="text-gold mt-0.5 flex-shrink-0">✦</span>
+                    <span>{p}</span>
                   </li>
                 ))}
               </ul>
-              <a href={tixrUrl} target="_blank" rel="noopener noreferrer" className="btn-gold text-center mt-2">
+              <a
+                href={tixrUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-gold inline-flex items-center justify-center text-center mt-2 w-full"
+              >
                 Buy Tickets
               </a>
             </div>
@@ -171,9 +192,11 @@ export default function CityHero({
       </section>
 
       {/* Young Connoisseur */}
-      <section className="bg-burgundy/20 border-y border-gold/20 py-14">
-        <div className="max-w-3xl mx-auto px-6 text-center">
-          <h2 className="section-heading text-3xl mb-4">Young Connoisseur Program</h2>
+      <section className="bg-burgundy/20 border-y border-gold/20 py-12 sm:py-14">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+          <h2 className="section-heading text-2xl sm:text-3xl mb-4 text-balance">
+            Young Connoisseur Program
+          </h2>
           <p className="font-sans text-cream/70 leading-relaxed mb-6">
             Wine Spectator is introducing a new initiative to welcome the next generation of wine
             lovers. Guests <strong>30 and under</strong> can purchase General Admission for
@@ -181,30 +204,38 @@ export default function CityHero({
             Saturday main event—see Tixr), making it easier for young professionals and emerging
             connoisseurs to join us. Valid proof of age is required at check-in.
           </p>
-          <a href={tixrUrl} target="_blank" rel="noopener noreferrer" className="btn-gold">
+          <a
+            href={tixrUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-gold inline-flex w-full max-w-xs mx-auto items-center justify-center"
+          >
             Buy Young Connoisseur Ticket — $100
           </a>
         </div>
       </section>
 
       {/* Wineries & Wines teaser */}
-      <section className="max-w-3xl mx-auto px-6 py-16 text-center">
-        <h2 className="section-heading text-4xl mb-4">Wineries &amp; Wines</h2>
-        <p className="font-sans text-cream/70 leading-relaxed mb-8">
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16 text-center">
+        <h2 className="section-heading text-3xl sm:text-4xl mb-4">Wineries &amp; Wines</h2>
+        <p className="font-sans text-cream/70 leading-relaxed mb-8 text-pretty">
           <strong className="text-cream/90">Friday and Saturday evenings</strong>, the main Grand Tour
           floor features 200+ wines from the world&apos;s best regions—Argentina, Australia, Italy,
           France, Chile, Spain, Portugal, New Zealand, the United States and more. All rated 90
           points or higher by Wine Spectator&apos;s editors.
         </p>
-        <Link href="/wineswineries" className="btn-outline">
+        <Link
+          href="/wineswineries"
+          className="btn-outline inline-flex w-full max-w-sm mx-auto items-center justify-center sm:w-auto"
+        >
           See Wineries &amp; Wines
         </Link>
       </section>
 
       {/* Restaurant Awards */}
       {restaurantAwards && restaurantAwards.length > 0 && (
-        <section className="max-w-4xl mx-auto px-6 pb-16">
-          <h2 className="section-heading text-3xl text-center mb-2">
+        <section className="max-w-4xl mx-auto px-4 sm:px-6 pb-12 sm:pb-16">
+          <h2 className="section-heading text-2xl sm:text-3xl text-center mb-2 text-balance px-1">
             Participating Restaurant Award Winners
           </h2>
           <p className="font-sans text-cream/60 text-sm text-center mb-10 leading-relaxed">
@@ -218,7 +249,7 @@ export default function CityHero({
                 href={r.href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="ticket-card p-8 flex flex-col items-center gap-4 hover:border-gold/60 transition-colors"
+                className="ticket-card p-5 sm:p-8 flex flex-col items-center gap-4 hover:border-gold/60 transition-colors"
               >
                 <div
                   className={`w-full rounded-lg px-4 py-5 flex min-h-[5.5rem] items-center justify-center border ${
@@ -245,10 +276,10 @@ export default function CityHero({
 
       {/* Hotel */}
       {hotelBookUrl && venueAddress && (
-        <section className="bg-black/40 border-t border-gold/10 py-14">
-          <div className="max-w-4xl mx-auto px-6 flex flex-col md:flex-row items-center gap-10">
-            <div className="flex-1">
-              <h2 className="section-heading text-3xl mb-3">Hotel Accommodations</h2>
+        <section className="bg-black/40 border-t border-gold/10 py-12 sm:py-14">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-10">
+            <div className="flex-1 w-full text-center md:text-left">
+              <h2 className="section-heading text-2xl sm:text-3xl mb-3">Hotel Accommodations</h2>
               <p className="font-sans text-cream/70 mb-1 font-medium">{venue}</p>
               {venueAddress && (
                 <p className="font-sans text-cream/50 text-sm mb-1">{venueAddress}</p>
@@ -256,7 +287,12 @@ export default function CityHero({
               {venuePhone && (
                 <p className="font-sans text-cream/50 text-sm mb-6">{venuePhone}</p>
               )}
-              <a href={hotelBookUrl} target="_blank" rel="noopener noreferrer" className="btn-gold">
+              <a
+                href={hotelBookUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-gold inline-flex w-full sm:w-auto items-center justify-center"
+              >
                 Book Room
               </a>
             </div>

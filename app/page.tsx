@@ -79,7 +79,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+      <section className="relative flex min-h-[min(85vh,720px)] sm:min-h-[80vh] items-center justify-center overflow-hidden">
         <Image
           src={HERO_BG}
           alt="Wine glasses at Grand Tour"
@@ -89,28 +89,28 @@ export default function HomePage() {
           priority
         />
         <div className="absolute inset-0 bg-charcoal/70" />
-        <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+        <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto w-full">
           <Image
             src={LOGO_URL}
             alt="Wine Spectator Grand Tour"
             width={780}
             height={131}
-            className="mx-auto mb-8 w-full max-w-xl drop-shadow-[0_4px_28px_rgba(0,0,0,0.85)] contrast-[1.08]"
+            className="mx-auto mb-6 sm:mb-8 w-full max-w-[min(100%,36rem)] h-auto drop-shadow-[0_4px_28px_rgba(0,0,0,0.85)] contrast-[1.08]"
             unoptimized
             priority
           />
-          <h2 className="section-heading text-3xl md:text-5xl mb-10">
+          <h2 className="section-heading text-2xl sm:text-3xl md:text-5xl mb-8 sm:mb-10 text-balance px-1">
             3 Cities. 3 Spectacular Weekends.
           </h2>
           <a
             href="https://www.tixr.com/groups/wsgrandtour"
             target="_blank"
             rel="noopener noreferrer"
-            className="btn-gold text-sm"
+            className="btn-gold text-sm inline-flex w-full max-w-xs mx-auto items-center justify-center sm:w-auto sm:max-w-none"
           >
             Tickets On Sale Now
           </a>
-          <p className="font-sans text-cream/50 text-xs mt-4 tracking-wider uppercase">
+          <p className="font-sans text-cream/50 text-[0.7rem] sm:text-xs mt-4 tracking-wider uppercase leading-relaxed max-w-md mx-auto text-pretty">
             Buy 5 VIP tickets or more &amp; get 25% off · Promo code:{" "}
             <span className="text-gold font-semibold">WineVIP25</span>
           </p>
@@ -118,16 +118,16 @@ export default function HomePage() {
       </section>
 
       {/* City cards */}
-      <section className="max-w-6xl mx-auto px-6 py-20">
-        <div className="grid md:grid-cols-3 gap-6">
+      <section className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+        <div className="grid md:grid-cols-3 gap-4 sm:gap-6">
           {cities.map((c) => (
             <div
               key={c.name}
-              className="ticket-card group p-8 flex flex-col gap-4 hover:border-gold/60 transition-colors duration-300"
+              className="ticket-card group p-5 sm:p-8 flex flex-col gap-4 hover:border-gold/60 transition-colors duration-300"
             >
               <div>
-                <h3 className="section-heading text-5xl mb-1">{c.name}</h3>
-                <p className="font-sans text-gold text-sm font-medium">{c.date}</p>
+                <h3 className="section-heading text-4xl sm:text-5xl mb-1">{c.name}</h3>
+                <p className="font-sans text-gold text-sm font-medium leading-snug">{c.date}</p>
                 <p className="font-sans text-cream/60 text-sm">{c.venue}</p>
               </div>
               <div className="flex flex-col gap-2 mt-auto">
@@ -135,11 +135,14 @@ export default function HomePage() {
                   href={c.tixr}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn-gold text-center text-xs"
+                  className="btn-gold text-center text-xs inline-flex items-center justify-center w-full"
                 >
                   Buy Tickets
                 </a>
-                <Link href={c.href} className="btn-outline text-center text-xs">
+                <Link
+                  href={c.href}
+                  className="btn-outline text-center text-xs inline-flex items-center justify-center w-full"
+                >
                   Learn More
                 </Link>
               </div>
@@ -149,8 +152,8 @@ export default function HomePage() {
       </section>
 
       {/* Wine gallery marquee */}
-      <section className="overflow-hidden border-y border-gold/10 py-4">
-        <div className="marquee-track">
+      <section className="overflow-hidden border-y border-gold/10 py-4 w-full max-w-[100vw]">
+        <div className="marquee-track touch-pan-y">
           {[...GALLERY_IMAGES, ...GALLERY_IMAGES].map((src, i) => (
             <div
               key={i}
@@ -170,11 +173,11 @@ export default function HomePage() {
       </section>
 
       {/* About section */}
-      <section className="max-w-3xl mx-auto px-6 py-20 text-center">
-        <h2 className="section-heading text-4xl md:text-5xl mb-6">
+      <section className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-20 text-center">
+        <h2 className="section-heading text-3xl sm:text-4xl md:text-5xl mb-6 text-balance">
           Taste Over 200 Wines Rated 90+ Points
         </h2>
-        <p className="font-sans text-cream/70 leading-relaxed text-base mb-10">
+        <p className="font-sans text-cream/70 leading-relaxed text-base mb-10 text-pretty">
           Each Grand Tour is a <strong className="text-cream/90">three-day weekend</strong> built
           around <strong className="text-cream/90">Friday and Saturday</strong>: days start at{" "}
           <strong className="text-cream/90">10:00 AM</strong> with seminars, then{" "}
@@ -185,14 +188,17 @@ export default function HomePage() {
           <strong className="text-cream/90">goodbye breakfast</strong> only—no main event that night.
           Your Riedel™ glass and food throughout the package are included per your Tixr pass.
         </p>
-        <Link href="/signupforupdates" className="btn-outline">
+        <Link
+          href="/signupforupdates"
+          className="btn-outline inline-flex w-full max-w-xs mx-auto items-center justify-center sm:w-auto sm:max-w-none"
+        >
           Sign Up For Updates
         </Link>
       </section>
 
       {/* Winemaker image strip */}
-      <section className="overflow-hidden border-y border-gold/10 py-4">
-        <div className="marquee-track" style={{ animationDirection: "reverse" }}>
+      <section className="overflow-hidden border-y border-gold/10 py-4 w-full max-w-[100vw]">
+        <div className="marquee-track touch-pan-y" style={{ animationDirection: "reverse" }}>
           {[...WINEMAKER_IMAGES, ...WINEMAKER_IMAGES].map((src, i) => (
             <div
               key={i}
@@ -212,8 +218,8 @@ export default function HomePage() {
       </section>
 
       {/* Wine Spectator subscribe */}
-      <section className="bg-burgundy/10 border-y border-gold/10 py-14">
-        <div className="max-w-3xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8">
+      <section className="bg-burgundy/10 border-y border-gold/10 py-12 sm:py-14">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-center gap-8 text-center md:text-left">
           <div className="flex-shrink-0 rounded-lg bg-cream/95 px-4 py-3 shadow-[inset_0_1px_0_rgba(255,255,255,0.65)] ring-1 ring-black/10">
             <Image
               src="https://static.wixstatic.com/media/20fc31_8a55c5deeb17415e909fe346819b0948~mv2.png/v1/fill/w_394,h_212,al_c,q_85,enc_avif,quality_auto/WS%2BCvrs_394x212.png"
@@ -225,7 +231,7 @@ export default function HomePage() {
             />
           </div>
           <div>
-            <h2 className="section-heading text-3xl mb-3">Wine Spectator Magazine</h2>
+            <h2 className="section-heading text-2xl sm:text-3xl mb-3">Wine Spectator Magazine</h2>
             <p className="font-sans text-cream/70 text-sm leading-relaxed mb-5">
               Go from wine curious to wine connoisseur with Wine Spectator as your guide. Expert
               ratings and reviews, wine education, access to our database of over 400,000 wines, and
@@ -235,7 +241,7 @@ export default function HomePage() {
               href="https://sub.winespectator.com/pubs/M5/WNE/3-Subscribe-button-monthly.jsp"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-gold"
+              className="btn-gold inline-flex w-full sm:w-auto items-center justify-center"
             >
               Subscribe
             </a>
@@ -244,8 +250,10 @@ export default function HomePage() {
       </section>
 
       {/* Sponsor form */}
-      <section className="max-w-2xl mx-auto px-6 py-20" id="sponsor">
-        <h2 className="section-heading text-4xl text-center mb-10">Become a Grand Tour Sponsor</h2>
+      <section className="max-w-2xl mx-auto px-4 sm:px-6 py-12 sm:py-20" id="sponsor">
+        <h2 className="section-heading text-3xl sm:text-4xl text-center mb-8 sm:mb-10 text-balance px-1">
+          Become a Grand Tour Sponsor
+        </h2>
         <form
           action="mailto:events@mshanken.com"
           method="get"
@@ -256,59 +264,59 @@ export default function HomePage() {
               type="text"
               placeholder="First Name *"
               required
-              className="bg-white/5 border border-gold/20 text-cream placeholder:text-cream/30 px-4 py-3 font-sans text-sm focus:outline-none focus:border-gold/60"
+              className="bg-white/5 border border-gold/20 text-cream placeholder:text-cream/30 px-4 py-3 font-sans text-base sm:text-sm focus:outline-none focus:border-gold/60 rounded-none"
             />
             <input
               type="text"
               placeholder="Last Name"
-              className="bg-white/5 border border-gold/20 text-cream placeholder:text-cream/30 px-4 py-3 font-sans text-sm focus:outline-none focus:border-gold/60"
+              className="bg-white/5 border border-gold/20 text-cream placeholder:text-cream/30 px-4 py-3 font-sans text-base sm:text-sm focus:outline-none focus:border-gold/60 rounded-none"
             />
           </div>
           <input
             type="tel"
             placeholder="Phone *"
             required
-            className="bg-white/5 border border-gold/20 text-cream placeholder:text-cream/30 px-4 py-3 font-sans text-sm focus:outline-none focus:border-gold/60"
+            className="bg-white/5 border border-gold/20 text-cream placeholder:text-cream/30 px-4 py-3 font-sans text-base sm:text-sm focus:outline-none focus:border-gold/60 rounded-none"
           />
           <input
             type="email"
             placeholder="Email *"
             required
-            className="bg-white/5 border border-gold/20 text-cream placeholder:text-cream/30 px-4 py-3 font-sans text-sm focus:outline-none focus:border-gold/60"
+            className="bg-white/5 border border-gold/20 text-cream placeholder:text-cream/30 px-4 py-3 font-sans text-base sm:text-sm focus:outline-none focus:border-gold/60 rounded-none"
           />
           <input
             type="text"
             placeholder="Company *"
             required
-            className="bg-white/5 border border-gold/20 text-cream placeholder:text-cream/30 px-4 py-3 font-sans text-sm focus:outline-none focus:border-gold/60"
+            className="bg-white/5 border border-gold/20 text-cream placeholder:text-cream/30 px-4 py-3 font-sans text-base sm:text-sm focus:outline-none focus:border-gold/60 rounded-none"
           />
           <input
             type="url"
             placeholder="Website *"
             required
-            className="bg-white/5 border border-gold/20 text-cream placeholder:text-cream/30 px-4 py-3 font-sans text-sm focus:outline-none focus:border-gold/60"
+            className="bg-white/5 border border-gold/20 text-cream placeholder:text-cream/30 px-4 py-3 font-sans text-base sm:text-sm focus:outline-none focus:border-gold/60 rounded-none"
           />
           <textarea
             placeholder="Message *"
             required
             rows={5}
-            className="bg-white/5 border border-gold/20 text-cream placeholder:text-cream/30 px-4 py-3 font-sans text-sm focus:outline-none focus:border-gold/60 resize-none"
+            className="bg-white/5 border border-gold/20 text-cream placeholder:text-cream/30 px-4 py-3 font-sans text-base sm:text-sm focus:outline-none focus:border-gold/60 resize-none rounded-none"
           />
           <p className="text-cream/40 text-xs font-sans">
             * Note: Submit will open your email client pre-addressed to{" "}
             <span className="text-gold">events@mshanken.com</span>. For a custom form integration,
             connect SendGrid or a form provider of your choice.
           </p>
-          <button type="submit" className="btn-gold self-start">
+          <button type="submit" className="btn-gold w-full sm:w-auto self-stretch sm:self-start">
             Submit
           </button>
         </form>
       </section>
 
       {/* Other events */}
-      <section className="bg-black/40 border-t border-gold/10 py-16">
-        <div className="max-w-5xl mx-auto px-6">
-          <h2 className="section-heading text-3xl text-center mb-10">
+      <section className="bg-black/40 border-t border-gold/10 py-12 sm:py-16">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6">
+          <h2 className="section-heading text-2xl sm:text-3xl text-center mb-8 sm:mb-10 text-balance px-1">
             Check Out Our Other Events
           </h2>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">

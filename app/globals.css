@@ -11,6 +11,8 @@
 
 html {
   scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 body {
@@ -18,6 +20,7 @@ body {
   color: #F5F0E8;
   font-family: var(--font-jost);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 /* Wine row decorative strip */
@@ -87,6 +90,8 @@ body {
   text-transform: uppercase;
   font-size: 0.72rem;
   padding: 0.85rem 2.5rem;
+  min-height: 44px;
+  line-height: 1.2;
   transition: background 0.2s, transform 0.15s;
 }
 
@@ -106,6 +111,8 @@ body {
   text-transform: uppercase;
   font-size: 0.72rem;
   padding: 0.85rem 2.5rem;
+  min-height: 44px;
+  line-height: 1.2;
   transition: background 0.2s, color 0.2s;
 }
 

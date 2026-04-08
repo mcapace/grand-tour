@@ -58,15 +58,18 @@ function FaqItem({ q, a }: { q: string; a: string }) {
   return (
     <div className="border-b border-gold/20">
       <button
-        className="w-full text-left py-5 flex justify-between items-center gap-4"
+        type="button"
+        className="w-full text-left py-4 sm:py-5 flex justify-between items-start gap-4 min-h-[3.25rem]"
         onClick={() => setOpen(!open)}
         aria-expanded={open}
       >
-        <span className="font-sans font-medium text-cream text-sm leading-snug">{q}</span>
+        <span className="font-sans font-medium text-cream text-sm sm:text-base leading-snug text-pretty pr-2">
+          {q}
+        </span>
         <svg
-          className={`flex-shrink-0 text-gold transition-transform duration-300 ${open ? "rotate-180" : ""}`}
-          width="16"
-          height="16"
+          className={`flex-shrink-0 text-gold transition-transform duration-300 mt-1 ${open ? "rotate-180" : ""}`}
+          width="18"
+          height="18"
           fill="none"
           stroke="currentColor"
           strokeWidth="1.5"
@@ -77,7 +80,9 @@ function FaqItem({ q, a }: { q: string; a: string }) {
       </button>
       {open && (
         <div className="pb-5 pr-8">
-          <p className="font-sans text-cream/70 text-sm leading-relaxed">{a}</p>
+          <p className="font-sans text-cream/70 text-sm sm:text-base leading-relaxed text-pretty pb-1">
+            {a}
+          </p>
         </div>
       )}
     </div>
@@ -87,21 +92,24 @@ function FaqItem({ q, a }: { q: string; a: string }) {
 export default function FaqPage() {
   return (
     <>
-      <section className="bg-gradient-to-b from-burgundy/20 to-charcoal py-20 text-center px-6">
-        <h1 className="section-heading text-6xl mb-4">FAQ</h1>
+      <section className="bg-gradient-to-b from-burgundy/20 to-charcoal py-14 sm:py-20 text-center px-4 sm:px-6">
+        <h1 className="section-heading text-5xl sm:text-6xl mb-4">FAQ</h1>
         <p className="font-sans text-gold text-xs uppercase tracking-[0.2em]">
           Frequently Asked Questions
         </p>
       </section>
 
-      <section className="max-w-2xl mx-auto px-6 py-16">
+      <section className="max-w-2xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
         {faqs.map((item) => (
           <FaqItem key={item.q} q={item.q} a={item.a} />
         ))}
 
         <div className="mt-12 text-center">
           <p className="font-sans text-cream/60 text-sm mb-4">Still have questions?</p>
-          <a href="mailto:events@mshanken.com" className="btn-gold">
+          <a
+            href="mailto:events@mshanken.com"
+            className="btn-gold inline-flex w-full max-w-sm mx-auto items-center justify-center"
+          >
             Email events@mshanken.com
           </a>
         </div>

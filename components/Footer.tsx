@@ -22,14 +22,14 @@ export default function Footer() {
         }}
       />
 
-      <div className="max-w-5xl mx-auto px-6 py-10 space-y-8">
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-10 space-y-8">
         {/* Nav links */}
-        <nav className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+        <nav className="flex flex-wrap justify-center gap-x-4 sm:gap-x-6 gap-y-1">
           {links.map((l) => (
             <Link
               key={l.href}
               href={l.href}
-              className="nav-link text-cream/60 hover:text-gold transition-colors"
+              className="nav-link text-cream/60 hover:text-gold transition-colors py-2 px-1 inline-flex items-center min-h-[44px]"
             >
               {l.label}
             </Link>
