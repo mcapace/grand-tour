@@ -176,10 +176,11 @@ export default function HomePage() {
         </h2>
         <p className="font-sans text-cream/70 leading-relaxed text-base mb-10">
           Each Grand Tour is a <strong className="text-cream/90">three-day weekend</strong> of
-          walk-around tastings—Friday through Sunday—with 200+ wines rated 90 points or higher. Meet
-          winemakers, enjoy chef-prepared bites, and take home a souvenir Riedel™ wine glass (included
-          with the sessions your ticket covers). Choose your city and join us for one night—or make a
-          weekend of it.
+          walk-around tastings—Friday through Sunday—with 200+ wines rated 90 points or higher.{" "}
+          <strong className="text-cream/90">Mornings</strong> begin with seminars every day;{" "}
+          <strong className="text-cream/90">Sunday</strong> includes breakfast. Evenings bring
+          winemakers, chef-prepared bites, and your souvenir Riedel™ wine glass (included with the
+          sessions your ticket covers). Choose your city—or make a full weekend of it.
         </p>
         <Link href="/signupforupdates" className="btn-outline">
           Sign Up For Updates

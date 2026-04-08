@@ -90,6 +90,20 @@ export default function CityHero({
         </p>
       </section>
 
+      {/* Daytime: seminars + Sunday breakfast */}
+      <section className="max-w-3xl mx-auto px-6 pb-16 text-center border-b border-gold/10">
+        <h2 className="section-heading text-3xl md:text-4xl mb-4">Mornings &amp; More</h2>
+        <p className="font-sans text-cream/70 leading-relaxed text-base">
+          <strong className="text-cream/90">Seminars</strong> kick off in the morning each day—
+          Friday, Saturday, and Sunday—          with editors, winemakers, and special guests (topics and
+          start times will be posted before the event). On <strong className="text-cream/90">Sunday
+          morning</strong>, relax over a full <strong className="text-cream/90">breakfast</strong>{" "}
+          with fellow wine lovers before the day&apos;s sessions. Morning programming and Sunday
+          breakfast are included with your Grand Tour ticket—see Tixr for details on full-weekend
+          and single-session options.
+        </p>
+      </section>
+
       {/* Gallery strip */}
       {galleryImages && galleryImages.length > 0 && (
         <section className="overflow-hidden py-4">

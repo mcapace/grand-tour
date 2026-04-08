@@ -23,6 +23,8 @@ export default function SanDiegoPage() {
           hours: "Nightly · 6:00 – 9:30 PM",
           highlight: true,
           perks: [
+            "Morning seminars Friday–Sunday (times announced before the event)",
+            "Sunday breakfast",
             "Exclusive first hour for VIPs each night (6:00–7:00 PM) before General Admission",
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",
@@ -34,6 +36,8 @@ export default function SanDiegoPage() {
           price: "$250",
           hours: "Nightly · 7:00 – 9:30 PM",
           perks: [
+            "Morning seminars Friday–Sunday (times announced before the event)",
+            "Sunday breakfast",
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",
             "Delicious selection of food",
@@ -44,6 +48,8 @@ export default function SanDiegoPage() {
           price: "$100",
           hours: "Nightly · 7:00 – 9:30 PM",
           perks: [
+            "Morning seminars Friday–Sunday (times announced before the event)",
+            "Sunday breakfast",
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",
             "Delicious selection of food",

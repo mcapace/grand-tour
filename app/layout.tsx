@@ -6,7 +6,7 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Wine Spectator's Grand Tour",
   description:
-    "Three cities, three weekends of walk-around tastings in 2026: San Diego Mar 13–15, Denver Apr 10–12, Tampa Apr 17–19 (each Fri–Sun). 200+ wines rated 90+ by Wine Spectator editors.",
+    "Three cities, three weekends in 2026—morning seminars, Sunday breakfast, and evening walk-around tastings (200+ wines rated 90+). San Diego Mar 13–15, Denver Apr 10–12, Tampa Apr 17–19 (each Fri–Sun).",
   openGraph: {
     title: "Wine Spectator's Grand Tour",
     description:

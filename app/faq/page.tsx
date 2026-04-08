@@ -5,7 +5,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "What is included in the ticket price?",
-    a: "200 wines rated 90+ for you to taste (red, white, rosé, sparkling and dessert), a beautiful souvenir Riedel™ wine glass, and a delicious selection of food to enjoy.",
+    a: "Full-weekend passes include morning seminars Friday through Sunday, Sunday breakfast, evening walk-around tastings (200+ wines rated 90+), a souvenir Riedel™ wine glass, and food during the evening sessions. If you purchase a single-night ticket, daytime events may not apply—check Tixr for your package. Seminar topics and morning times are announced before the event.",
   },
   {
     q: "What is included in the VIP ticket?",
@@ -13,7 +13,11 @@ const faqs = [
   },
   {
     q: "What time does the Grand Tour start?",
-    a: "Each city hosts Grand Tour Friday through Sunday. General Admission hours are 7:00–9:30 PM each night. VIP ticket holders may enter at 6:00 PM for the additional tasting hour. Always confirm your exact session on your Tixr ticket.",
+    a: "Days begin with morning seminars (Friday–Sunday); exact start times will be shared before the event. Sunday includes breakfast. Evening walk-around tastings run 7:00–9:30 PM nightly (VIP entry from 6:00 PM). Confirm all times on your Tixr ticket.",
+  },
+  {
+    q: "Tell me about the seminars and Sunday breakfast.",
+    a: "Each morning—Friday, Saturday, and Sunday—we host seminars with Wine Spectator editors, winemakers, and guests. On Sunday, breakfast is served as part of the weekend. Schedules and room assignments are published closer to your Grand Tour date.",
   },
   {
     q: "What is the dress code?",
@@ -37,7 +41,7 @@ const faqs = [
   },
   {
     q: "Will there be food at the tasting?",
-    a: "Yes — expect a generous selection of food to enjoy during each evening’s tasting session.",
+    a: "Yes — chef-prepared bites during each evening tasting, plus a full Sunday breakfast as part of the weekend schedule.",
   },
   {
     q: "Is there a Young Connoisseur program?",
