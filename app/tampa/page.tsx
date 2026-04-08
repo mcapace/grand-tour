@@ -4,7 +4,7 @@ import CityHero from "@/components/CityHero";
 export const metadata: Metadata = {
   title: "Tampa | Wine Spectator Grand Tour 2026",
   description:
-    "Grand Tour Tampa, Apr 17–19, 2026: Fri/Sat 10 AM start through evening Grand Tour; Sun goodbye breakfast. JW Marriott Tampa Water Street.",
+    "Grand Tour Tampa, Apr 17–19, 2026: Fri/Sat 10 AM & 2:30 PM seminars, lunch, evening Grand Tour; Sun breakfast. JW Marriott Tampa Water Street.",
 };
 
 export default function TampaPage() {
@@ -22,7 +22,7 @@ export default function TampaPage() {
           hours: "Fri & Sat evenings · 6:00 – 9:30 PM",
           highlight: true,
           perks: [
-            "Fri & Sat daytime: 10:00 AM seminars, lunch, afternoon session",
+            "Fri & Sat daytime: 10:00 AM seminars, lunch, 2:30 PM afternoon seminar",
             "Sunday: goodbye breakfast (no evening tasting)",
             "Fri & Sat evenings: VIP from 6:00 PM (extra hour before General Admission)",
             "Souvenir Riedel™ wine glass",
@@ -35,7 +35,7 @@ export default function TampaPage() {
           price: "$250",
           hours: "Fri & Sat evenings · 7:00 – 9:30 PM",
           perks: [
-            "Fri & Sat daytime: 10:00 AM seminars, lunch, afternoon session",
+            "Fri & Sat daytime: 10:00 AM seminars, lunch, 2:30 PM afternoon seminar",
             "Sunday: goodbye breakfast (no evening tasting)",
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",

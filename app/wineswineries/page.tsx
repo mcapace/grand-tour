@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Wineries & Wines | Wine Spectator Grand Tour 2026",
   description:
-    "Explore 200+ Grand Tour wines (Fri & Sat main events). Weekend also includes daytime seminars and Sunday farewell breakfast.",
+    "Explore 200+ Grand Tour wines (Fri & Sat evenings). Daytime includes 10 AM & 2:30 PM seminars plus Sunday farewell breakfast.",
 };
 
 const cities = [

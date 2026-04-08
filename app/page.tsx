@@ -181,8 +181,8 @@ export default function HomePage() {
           Each Grand Tour is a <strong className="text-cream/90">three-day weekend</strong> built
           around <strong className="text-cream/90">Friday and Saturday</strong>: days start at{" "}
           <strong className="text-cream/90">10:00 AM</strong> with seminars, then{" "}
-          <strong className="text-cream/90">lunch</strong>, an{" "}
-          <strong className="text-cream/90">afternoon session</strong>, and the signature evening
+          <strong className="text-cream/90">lunch</strong>, the{" "}
+          <strong className="text-cream/90">afternoon seminar at 2:30 PM</strong>, and the signature evening
           walk-around with 200+ wines rated 90+.{" "}
           <strong className="text-cream/90">Sunday</strong> is a{" "}
           <strong className="text-cream/90">goodbye breakfast</strong> only—no main event that night.

@@ -4,7 +4,7 @@ import CityHero from "@/components/CityHero";
 export const metadata: Metadata = {
   title: "San Diego | Wine Spectator Grand Tour 2026",
   description:
-    "Grand Tour San Diego, Mar 13–15, 2026: Fri/Sat full days ending with evening walk-around; Sun farewell breakfast. Gaylord Convention Center.",
+    "Grand Tour San Diego, Mar 13–15, 2026: Fri/Sat 10 AM & 2:30 PM seminars, lunch, evening walk-around; Sun breakfast. Gaylord Convention Center.",
 };
 
 export default function SanDiegoPage() {
@@ -23,7 +23,7 @@ export default function SanDiegoPage() {
           hours: "Fri & Sat evenings · 6:00 – 9:30 PM",
           highlight: true,
           perks: [
-            "Fri & Sat daytime: 10:00 AM seminars, lunch, afternoon session",
+            "Fri & Sat daytime: 10:00 AM seminars, lunch, 2:30 PM afternoon seminar",
             "Sunday: goodbye breakfast (no evening tasting)",
             "Fri & Sat evenings: VIP from 6:00 PM (extra hour before General Admission)",
             "Souvenir Riedel™ wine glass",
@@ -36,7 +36,7 @@ export default function SanDiegoPage() {
           price: "$250",
           hours: "Fri & Sat evenings · 7:00 – 9:30 PM",
           perks: [
-            "Fri & Sat daytime: 10:00 AM seminars, lunch, afternoon session",
+            "Fri & Sat daytime: 10:00 AM seminars, lunch, 2:30 PM afternoon seminar",
             "Sunday: goodbye breakfast (no evening tasting)",
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",

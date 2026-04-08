@@ -4,7 +4,7 @@ import CityHero from "@/components/CityHero";
 export const metadata: Metadata = {
   title: "Denver | Wine Spectator Grand Tour 2026",
   description:
-    "Grand Tour Denver, Apr 10–12, 2026: Fri/Sat 10 AM seminars, lunch, afternoon session, evening walk-around; Sun goodbye breakfast. Sheraton Denver Downtown.",
+    "Grand Tour Denver, Apr 10–12, 2026: Fri/Sat 10 AM seminars, lunch, 2:30 PM afternoon seminar, evening walk-around; Sun goodbye breakfast. Sheraton Denver Downtown.",
 };
 
 export default function DenverPage() {
@@ -26,7 +26,7 @@ export default function DenverPage() {
           hours: "Fri & Sat evenings · 6:00 – 9:30 PM",
           highlight: true,
           perks: [
-            "Fri & Sat daytime: 10:00 AM seminars, lunch, afternoon session",
+            "Fri & Sat daytime: 10:00 AM seminars, lunch, 2:30 PM afternoon seminar",
             "Sunday: goodbye breakfast (no evening tasting)",
             "Fri & Sat evenings: VIP from 6:00 PM (extra hour before General Admission)",
             "Souvenir Riedel™ wine glass",
@@ -39,7 +39,7 @@ export default function DenverPage() {
           price: "$250",
           hours: "Fri & Sat evenings · 7:00 – 9:30 PM",
           perks: [
-            "Fri & Sat daytime: 10:00 AM seminars, lunch, afternoon session",
+            "Fri & Sat daytime: 10:00 AM seminars, lunch, 2:30 PM afternoon seminar",
             "Sunday: goodbye breakfast (no evening tasting)",
             "Souvenir Riedel™ wine glass",
             "Tasting book with 200 wine descriptions",

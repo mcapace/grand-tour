@@ -12,7 +12,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "Wine Spectator's Grand Tour",
   description:
-    "Grand Tour 2026: Fri–Sat 10 AM seminars, lunch, afternoon session, then evening walk-around (90+ wines); Sun goodbye breakfast. San Diego Mar 13–15, Denver Apr 10–12, Tampa Apr 17–19.",
+    "Grand Tour 2026: Fri–Sat 10 AM seminars, lunch, 2:30 PM afternoon seminar, evening walk-around (90+ wines); Sun goodbye breakfast. San Diego Mar 13–15, Denver Apr 10–12, Tampa Apr 17–19.",
   openGraph: {
     title: "Wine Spectator's Grand Tour",
     description:

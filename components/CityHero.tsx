@@ -115,8 +115,8 @@ export default function CityHero({
         <p className="font-sans text-cream/70 leading-relaxed text-base mb-6 text-pretty">
           <strong className="text-cream/90">Friday &amp; Saturday</strong> follow the same rhythm:{" "}
           <strong className="text-cream/90">10:00 AM</strong> start for seminars and conversation with
-          editors, winemakers, and guests—then <strong className="text-cream/90">lunch</strong>, an{" "}
-          <strong className="text-cream/90">afternoon session</strong>, and finally the{" "}
+          editors, winemakers, and guests—then <strong className="text-cream/90">lunch</strong>, followed
+          by the <strong className="text-cream/90">afternoon seminar at 2:30 PM</strong>, and finally the{" "}
           <strong className="text-cream/90">evening Grand Tour</strong> walk-around with 200+ wines.
           Room assignments and session topics are announced before the event.
         </p>

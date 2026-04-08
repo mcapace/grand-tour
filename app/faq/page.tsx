@@ -5,7 +5,7 @@ import { useState } from "react";
 const faqs = [
   {
     q: "What is included in the ticket price?",
-    a: "Full-weekend packages include everything for Friday and Saturday—10:00 AM seminars, lunch, an afternoon session, the evening walk-around Grand Tour (200+ wines rated 90+), food during those days, and a souvenir Riedel™ wine glass—as well as Sunday’s goodbye breakfast. Sunday has no seminars or evening tasting. Single-day options may differ; see Tixr for exactly what your pass covers.",
+    a: "Full-weekend packages include everything for Friday and Saturday—10:00 AM seminars, lunch, a 2:30 PM afternoon seminar, the evening walk-around Grand Tour (200+ wines rated 90+), food during those days, and a souvenir Riedel™ wine glass—as well as Sunday’s goodbye breakfast. Sunday has no seminars or evening tasting. Single-day options may differ; see Tixr for exactly what your pass covers.",
   },
   {
     q: "What is included in the VIP ticket?",
@@ -13,7 +13,7 @@ const faqs = [
   },
   {
     q: "What time does the Grand Tour start?",
-    a: "Friday and Saturday: the day begins at 10:00 AM with seminars, followed by lunch, an afternoon session, then the evening walk-around (VIP 6:00–9:30 PM · General Admission 7:00–9:30 PM). Sunday is a goodbye breakfast only—no 10:00 AM start and no evening Grand Tour. Final timings are on your Tixr ticket.",
+    a: "Friday and Saturday: the day begins at 10:00 AM with seminars, followed by lunch, then a 2:30 PM afternoon seminar, then the evening walk-around (VIP 6:00–9:30 PM · General Admission 7:00–9:30 PM). Sunday is a goodbye breakfast only—no 10:00 AM start and no evening Grand Tour. Final timings are on your Tixr ticket.",
   },
   {
     q: "How does Sunday work compared to Friday and Saturday?",
@@ -41,7 +41,7 @@ const faqs = [
   },
   {
     q: "Will there be food at the tasting?",
-    a: "Yes—lunch is served on Friday and Saturday between the morning and afternoon programming, chef-prepared bites during each evening walk-around, and a Sunday goodbye breakfast.",
+    a: "Yes—lunch is served on Friday and Saturday between the 10:00 AM seminar block and the 2:30 PM afternoon seminar, chef-prepared bites during each evening walk-around, and a Sunday goodbye breakfast.",
   },
   {
     q: "Is there a Young Connoisseur program?",
