@@ -9,16 +9,16 @@ export const metadata: Metadata = {
 
 const cities = [
   {
-    name: "Denver",
-    date: "April 10–12, 2026",
-    tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-denver-164327",
-    href: "/denver",
-  },
-  {
     name: "San Diego",
     date: "March 13–15, 2026",
     tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-san-diego-164352",
     href: "/sandiego",
+  },
+  {
+    name: "Denver",
+    date: "April 10–12, 2026",
+    tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-denver-164327",
+    href: "/denver",
   },
   {
     name: "Tampa",

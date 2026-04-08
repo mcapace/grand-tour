@@ -84,8 +84,8 @@ export default function SignUpPage() {
                 I&apos;m interested in: (optional)
               </p>
               {[
-                { id: "denver", label: "Grand Tour Denver" },
                 { id: "sandiego", label: "Grand Tour San Diego" },
+                { id: "denver", label: "Grand Tour Denver" },
                 { id: "tampa", label: "Grand Tour Tampa" },
                 { id: "nywe", label: "NY Wine Experience" },
                 { id: "whiskyfest", label: "WhiskyFest" },
@@ -160,11 +160,11 @@ export default function SignUpPage() {
           <span className="text-gold font-semibold">WineVIP25</span>.
         </p>
         <div className="flex flex-wrap justify-center gap-4">
-          <Link href="/denver" className="btn-outline text-xs">
-            Denver — April 10–12, 2026
-          </Link>
           <Link href="/sandiego" className="btn-outline text-xs">
             San Diego — March 13–15, 2026
+          </Link>
+          <Link href="/denver" className="btn-outline text-xs">
+            Denver — April 10–12, 2026
           </Link>
           <Link href="/tampa" className="btn-outline text-xs">
             Tampa — April 17–19, 2026

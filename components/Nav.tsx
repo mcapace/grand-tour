@@ -11,8 +11,8 @@ const NAV_LOGO_URL =
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/denver", label: "Denver" },
   { href: "/sandiego", label: "San Diego" },
+  { href: "/denver", label: "Denver" },
   { href: "/tampa", label: "Tampa" },
   { href: "/wineswineries", label: "Wineries & Wines" },
   { href: "/faq", label: "FAQ" },

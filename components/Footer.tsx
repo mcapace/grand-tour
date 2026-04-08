@@ -2,8 +2,8 @@ import Link from "next/link";
 
 const links = [
   { href: "/", label: "Home" },
-  { href: "/denver", label: "Denver" },
   { href: "/sandiego", label: "San Diego" },
+  { href: "/denver", label: "Denver" },
   { href: "/tampa", label: "Tampa" },
   { href: "/wineswineries", label: "Wineries & Wines" },
   { href: "/faq", label: "FAQ" },
@@ -67,7 +67,7 @@ export default function Footer() {
           <p>
             <strong className="text-cream/70">Refund Policy:</strong> A refund
             (minus processing fees) is available for all tickets until 60 days
-            prior to the event: Denver – Feb 9, 2026 | San Diego – Jan 12,
+            prior to the event: San Diego – Jan 12, 2026 | Denver – Feb 9,
             2026 | Tampa – Feb 16, 2026. After those dates, no refunds are
             available.
           </p>

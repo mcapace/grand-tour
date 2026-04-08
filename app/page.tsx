@@ -30,18 +30,18 @@ const WINEMAKER_IMAGES = [
 
 const cities = [
   {
-    name: "Denver",
-    date: "April 10–12, 2026",
-    venue: "Sheraton Denver Downtown",
-    href: "/denver",
-    tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-denver-164327",
-  },
-  {
     name: "San Diego",
     date: "March 13–15, 2026",
     venue: "Gaylord Convention Center",
     href: "/sandiego",
     tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-san-diego-164352",
+  },
+  {
+    name: "Denver",
+    date: "April 10–12, 2026",
+    venue: "Sheraton Denver Downtown",
+    href: "/denver",
+    tixr: "https://www.tixr.com/groups/wsgrandtour/events/wine-spectator-s-grand-tour-denver-164327",
   },
   {
     name: "Tampa",

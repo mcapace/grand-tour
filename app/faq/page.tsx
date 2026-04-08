@@ -29,7 +29,7 @@ const faqs = [
   },
   {
     q: "How do I request a refund or exchange?",
-    a: "A refund (minus processing fees) is available for all tickets until 60 days prior to the event: Denver – Feb 9, 2026 | San Diego – Jan 12, 2026 | Tampa – Feb 16, 2026. After those dates there are no more refunds. To request a refund or exchange please send your request to events@mshanken.com.",
+    a: "A refund (minus processing fees) is available for all tickets until 60 days prior to the event: San Diego – Jan 12, 2026 | Denver – Feb 9, 2026 | Tampa – Feb 16, 2026. After those dates there are no more refunds. To request a refund or exchange please send your request to events@mshanken.com.",
   },
   {
     q: "Can I transfer my ticket to a friend?",
